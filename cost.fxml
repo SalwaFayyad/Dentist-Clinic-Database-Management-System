@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dataproject.CostController">
+    <children>
+        <BorderPane layoutX="-11.0" layoutY="-3.0" prefHeight="600.0" prefWidth="934.0" />
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="591.0" prefWidth="918.0" style="-fx-background-color: #BAE8D9;">
+                    <children>
+                        <Pane layoutX="26.0" layoutY="52.0" prefHeight="498.0" prefWidth="863.0" style="-fx-background-color: #F5FFFB;">
+                     <children>
+                        <TableView fx:id="costTable" layoutX="70.0" layoutY="6.0" prefHeight="285.0" prefWidth="749.0">
+                          <columns>
+                            <TableColumn fx:id="pid" prefWidth="97.5999755859375" text="Patient ID" />
+                            <TableColumn fx:id="PName" prefWidth="152.80003356933594" text="Patient name" />
+                              <TableColumn fx:id="date" prefWidth="208.0" text="Date of Visit" />
+                              <TableColumn fx:id="TreatmentCost" prefWidth="140.79998779296875" text="Treatment Cost" />
+                              <TableColumn fx:id="PayCost" prefWidth="145.60003662109375" text="Pay Cost" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="ID" layoutX="73.0" layoutY="300.0" prefHeight="25.0" prefWidth="78.0" promptText="Patient ID">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="Name" layoutX="161.0" layoutY="300.0" promptText="Patient Name" />
+                        <TextField fx:id="TreCost" layoutX="523.0" layoutY="300.0" prefHeight="25.0" prefWidth="103.0" promptText="Treatment cost" />
+                        <TextField fx:id="payCost" layoutX="645.0" layoutY="300.0" prefHeight="25.0" prefWidth="103.0" promptText="Pay Cost" />
+                        <DatePicker fx:id="Date" layoutX="332.0" layoutY="300.0" promptText="Date of Pay" />
+                        <Button fx:id="saveAdd" layoutX="780.0" layoutY="300.0" mnemonicParsing="false" text="Save" />
+                        <Button fx:id="setDeletePatient" layoutX="783.0" layoutY="335.0" mnemonicParsing="false" onAction="#setDeletePatient" prefHeight="0.0" prefWidth="34.0">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/328028028_1895610237467268_7190888419878766151_n.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Search" layoutX="566.0" layoutY="331.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="37.0">
+                           <graphic>
+                              <ImageView fitHeight="13.0" fitWidth="21.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/icons8-search-client-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TableView fx:id="costTable1" layoutX="68.0" layoutY="328.0" prefHeight="163.0" prefWidth="484.0">
+                           <columns>
+                              <TableColumn fx:id="pid1" prefWidth="94.4000244140625" text="Patient ID" />
+                              <TableColumn fx:id="PName1" prefWidth="108.80006408691406" text="Patient name" />
+                              <TableColumn fx:id="date1" prefWidth="103.20001220703125" text="Date of Visit" />
+                              <TableColumn fx:id="TreatmentCost1" prefWidth="99.20001220703125" text="Treatment Cost" />
+                              <TableColumn fx:id="PayCost1" prefWidth="77.59991455078125" text="Payment" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="SumPay" layoutX="668.0" layoutY="409.0" prefHeight="25.0" prefWidth="103.0" promptText="Sum of payment" />
+                        <TextField fx:id="SumTre" layoutX="668.0" layoutY="377.0" prefHeight="25.0" prefWidth="103.0" promptText="Sum of treatment" />
+                        <Label layoutX="564.0" layoutY="381.0" text="Sum of treatment" />
+                        <Label layoutX="567.0" layoutY="413.0" text="Sum of payment" />
+                     </children>
+                        </Pane>
+                  <Label layoutX="393.0" layoutY="27.0" prefHeight="17.0" prefWidth="179.0" text="COST DETAILS">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="HomeReturn" layoutX="827.0" layoutY="550.0" mnemonicParsing="false" onAction="#HomeReturn" prefHeight="20.0" prefWidth="61.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="42.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/residence.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

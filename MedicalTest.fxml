@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dataproject.MedicalStateController">
+    <children>
+        <BorderPane layoutX="-11.0" layoutY="-3.0" prefHeight="600.0" prefWidth="934.0" />
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="591.0" prefWidth="918.0" style="-fx-background-color: #BAE8D9;">
+                    <children>
+                        <Pane layoutX="52.0" layoutY="61.0" prefHeight="489.0" prefWidth="818.0" style="-fx-background-color: #F5FFFB;">
+                            <children>
+                                <TableView fx:id="medicalTable" layoutX="78.0" layoutY="19.0" prefHeight="386.0" prefWidth="681.0">
+                                    <columns>
+                                        <TableColumn fx:id="pid" prefWidth="122.39999389648438" text="pid" />
+                                        <TableColumn fx:id="Name" prefWidth="179.2000274658203" text="Patient Name" />
+                                        <TableColumn fx:id="medicalstate" prefWidth="174.39996337890625" text="medicalState" />
+                              <TableColumn fx:id="Date" prefWidth="206.4000244140625" text="Date of last visit" />
+                                    </columns>
+                                </TableView>
+                        <Button layoutX="723.0" layoutY="419.0" mnemonicParsing="false" onAction="#setDeletePatient">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="20.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/328028028_1895610237467268_7190888419878766151_n.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="searchbtn" layoutX="255.0" layoutY="421.0" mnemonicParsing="false">
+                           <graphic>
+                              <ImageView fitHeight="21.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/icons8-search-client-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TextField fx:id="pidText" layoutX="78.0" layoutY="422.0" promptText="Search By ID" />
+                        <Button fx:id="refreshbtn" layoutX="675.0" layoutY="420.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="29.0">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/refresh.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </Pane>
+
+                  <Label layoutX="54.0" layoutY="31.0" prefHeight="29.0" prefWidth="234.0" text="Dr.Rafat Dental Clinic">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="841.0" layoutY="552.0" mnemonicParsing="false" onAction="#HomeReturn" prefHeight="17.0" prefWidth="44.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/icons8-return-16.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="815.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../projectPhotos/1386830 (1).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="313.0" layoutY="33.0" prefHeight="29.0" prefWidth="300.0" text="DISEASES PATENTS">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
