@@ -8,5 +8,6 @@ This project is a comprehensive database management system designed specifically
 * Appointment Scheduling: Efficiently schedule and organize patient appointments to optimize clinic resources and minimize wait times.
 * User-Friendly Interface: Our system boasts a user-friendly JavaFX interface, ensuring ease of navigation and utilization for clinic staff.
 
-<iframe src="https://drive.google.com/file/d/1vLgTph5D78zLxZAKK4lugCpXQdMCItCs/preview" width="640" height="480"></iframe>
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID_HERE/maxresdefault.jpg)](https://drive.google.com/file/d/1vLgTph5D78zLxZAKK4lugCpXQdMCItCs/preview)
 
+[![View the LinkedIn post](https://img.shields.io/badge/LinkedIn-View%20Post-blue)](https://www.linkedin.com/feed/update/urn:li:activity:7176936492089384960/?commentUrn=urn%3Ali%3Acomment%3A(ugcPost%3A7176936234001289217%2C7176938120238534657)&dashCommentUrn=urn%3Ali%3Afsd_comment%3A(7176938120238534657%2Curn%3Ali%3AugcPost%3A7176936234001289217))
