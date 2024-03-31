@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dataproject.controlTest">
+   <children>
+      <BorderPane layoutX="-11.0" layoutY="-3.0" prefHeight="600.0" prefWidth="934.0" />
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="591.0" prefWidth="918.0" style="-fx-background-color: #BAE8D9;">
+               <children>
+                  <Pane layoutX="6.0" layoutY="90.0" prefHeight="444.0" prefWidth="841.0" style="-fx-background-color: #F5FFFB;">
+                     <children>
+                        <ImageView fitHeight="286.0" fitWidth="471.0" layoutX="316.0" layoutY="61.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/الخطيب.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="37.0" layoutY="24.0" prefHeight="17.0" prefWidth="208.0" text="Dr.Rafat Dental Clinic">
+                           <font>
+                              <Font name="Times New Roman Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="74.0" layoutY="24.0" prefHeight="66.0" prefWidth="771.0" style="-fx-background-color: #BAE8D9;">
+                     <children>
+                        <Label layoutX="222.0" layoutY="21.0" prefHeight="33.0" prefWidth="326.0" text="Al-Khatib  Dental Clinic">
+                           <font>
+                              <Font name="Times New Roman" size="32.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="40.0" fitWidth="117.0" layoutX="65.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="-39.0" layoutY="4.0" prefHeight="17.0" prefWidth="208.0" text="Dr.Rafat Dental Clinic">
+                           <font>
+                              <Font name="Times New Roman Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-5.0" layoutY="88.0" prefHeight="502.0" prefWidth="266.0" style="-fx-background-color: #BAE8D9;">
+                     <children>
+                        <Label layoutX="65.0" layoutY="450.0" text="Email: dent_rafat@hotmail.com">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="23.0" fitWidth="35.0" layoutX="33.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../projectPhotos/icons8-mail-50.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="100.0" fitWidth="20.0" layoutX="33.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../projectPhotos/icons8-ringer-volume-50.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="65.0" layoutY="427.0" text="Tel: 02-2954705599">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="23.0" layoutY="6.0" mnemonicParsing="false" onAction="#PatientButton" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="PATIENTS " />
+                        <Button fx:id="AppointmentsButton" layoutX="22.0" layoutY="59.0" mnemonicParsing="false" onAction="#AppointmentsButton" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="APPOINTMENTS" />
+                        <Button layoutX="22.0" layoutY="122.0" mnemonicParsing="false" onAction="#costButton" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="COSTS" />
+                        <Button fx:id="DiagnosisButton" layoutX="22.0" layoutY="174.0" mnemonicParsing="false" onAction="#DiagnosisButton" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="DIAGNOSIS" />
+                        <Button layoutX="22.0" layoutY="236.0" mnemonicParsing="false" onAction="#TreatmentButton" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="TREATMENTS" />
+                        <Button layoutX="22.0" layoutY="290.0" mnemonicParsing="false" onAction="#Medical" prefHeight="47.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="MEDICAL STATE OF PATIENTS">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/medical-history.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="41.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../projectPhotos/dollar.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="22.0" layoutY="352.0" mnemonicParsing="false" onAction="#PrescriptionMedication" prefHeight="47.0" prefWidth="222.0" style="-fx-background-color: #F5FFFB; -fx-border-color: #000000;" text="PRESCRIPTION MEDICATION">
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../projectPhotos/dental-record.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <ImageView fitHeight="23.0" fitWidth="46.0" layoutX="30.0" layoutY="245.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/dental-record.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="38.0" layoutY="181.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/dental-report.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="38.0" layoutX="37.0" layoutY="64.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/appointment.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="35.0" layoutY="12.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/dentist.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

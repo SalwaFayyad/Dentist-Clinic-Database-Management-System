@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dataproject.AppointmentController">
+    <children>
+        <BorderPane layoutX="-11.0" layoutY="-3.0" prefHeight="600.0" prefWidth="934.0" />
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="591.0" prefWidth="918.0" style="-fx-background-color: #BAE8D9;">
+                    <children>
+                        <Pane layoutX="26.0" layoutY="52.0" prefHeight="498.0" prefWidth="863.0" style="-fx-background-color: #F5FFFB;">
+                            <children>
+                                <Label layoutX="284.0" layoutY="14.0" text="APPOINTMENTS DETAILS ">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <TableView fx:id="AppTable" layoutX="55.0" layoutY="45.0" prefHeight="392.0" prefWidth="660.0">
+                                    <columns>
+                                        <TableColumn fx:id="Adate" prefWidth="151.1999969482422" text="Date" />
+                                        <TableColumn fx:id="Atime" prefWidth="126.4000244140625" text="Time" />
+                                        <TableColumn fx:id="Pname" prefWidth="172.00006103515625" text="Patient Name" />
+                                        <TableColumn fx:id="PID" prefWidth="169.5999755859375" text="Patient ID" />
+                                    </columns>
+                                </TableView>
+                                <DatePicker fx:id="datePick" layoutX="55.0" layoutY="450.0" prefHeight="25.0" prefWidth="145.0" promptText="Date" />
+                                <TextField fx:id="timeText" layoutX="219.0" layoutY="450.0" prefHeight="25.0" prefWidth="145.0" promptText="hh:mm" />
+                                <TextField fx:id="PnameText" layoutX="378.0" layoutY="450.0" promptText="Patient name" />
+                                <TextField fx:id="PIDText" layoutX="546.0" layoutY="450.0" prefHeight="25.0" prefWidth="107.0" promptText="Patient ID" />
+                                <Button fx:id="refreshButton" layoutX="732.0" layoutY="447.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="49.0">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="16.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="19.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../projectPhotos/refresh.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="deleteButton" layoutX="732.0" layoutY="143.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="114.0" text="Delete">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="37.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../projectPhotos/calendar.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="updateButton" layoutX="732.0" layoutY="200.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" text="UPDATE">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="14.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../projectPhotos/icons8-update-user-48.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="addButton" layoutX="666.0" layoutY="445.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="49.0">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="16.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../projectPhotos/appointments.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="searchDateButton" layoutX="732.0" layoutY="256.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="127.0" text="Search by Date">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="15.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="searchButton" layoutX="732.0" layoutY="313.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="127.0" text="search by ID">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="16.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </Pane>
+                        <Label layoutX="45.0" layoutY="34.0" text="Dr.Rafat Dental Clinic">
+                            <font>
+                                <Font name="Times New Roman Bold" size="15.0" />
+                            </font>
+                        </Label>
+                          <Button fx:id="returnButton" layoutX="827.0" layoutY="550.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="61.0">
+                              <font>
+                                  <Font name="Times New Roman Bold" size="14.0" />
+                              </font>
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="42.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../../../projectPhotos/residence.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                          </Button>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

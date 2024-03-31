@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dataproject.HelloController">
+    <children>
+        <BorderPane layoutX="-11.0" layoutY="-3.0" prefHeight="600.0" prefWidth="934.0" />
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="591.0" prefWidth="918.0" style="-fx-background-color: #BAE8D9;">
+                    <children>
+                        <Pane layoutX="26.0" layoutY="52.0" prefHeight="498.0" prefWidth="863.0" style="-fx-background-color: #F5FFFB;">
+                            <children>
+
+
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
